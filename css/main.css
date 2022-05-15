@@ -82,6 +82,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .header {
@@ -108,6 +109,11 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 1200px) {
+  .header__container {
+    padding: 0px 20px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     font-size: 12px;
@@ -187,12 +193,12 @@ body {
 
 @media (max-width: 1250px) {
   .order {
-    margin: 64px 120px 0px 120px;
+    margin: 64px 120px 0px 0px;
   }
 }
 @media (max-width: 768px) {
   .order {
-    margin: 26px 66px 0px 66px;
+    margin: 26px 66px 35px 0px;
   }
 
   .links-line {
@@ -322,6 +328,9 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.about-container {
+  width: 1200px;
+}
 .about__h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -343,12 +352,26 @@ body {
 }
 .about__item {
   border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
+  width: 360px;
 }
 .about__item:not(:last-child) {
   padding-right: 5px;
 }
 .about__img-cont {
-  background-image: url("images/image00004 1.jpg") no-repeat;
+  background-size: cover;
+  height: 242px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.about__img-cont_1 {
+  background-image: url("../images/image000041.jpg");
+}
+.about__img-cont_2 {
+  background-image: url("../images/file1.jpg");
+}
+.about__img-cont_3 {
+  background-image: url("../images/kov1-1-300x2251.jpg");
 }
 .about__text {
   padding: 0px 33px 22px 22px;
@@ -373,11 +396,19 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .about-container {
+    width: 100%;
+  }
   .about__items {
     flex-direction: column;
+    align-items: center;
   }
   .about__item {
     max-width: 600px;
+    width: 100%;
+  }
+  .about__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   .about__item img {
     background-size: cover;
@@ -385,6 +416,11 @@ body {
   }
   .about__img-cont {
     max-height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .about__img-cont {
+    background-position: center center;
   }
 }
 
