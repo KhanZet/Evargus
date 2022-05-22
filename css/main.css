@@ -423,5 +423,100 @@ body {
     background-position: center center;
   }
 }
+.feedback {
+  background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.feedback__text {
+  background: #fff;
+  min-height: 187px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 44px 20px 44px;
+  position: relative;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  border-radius: 9px;
+}
+.feedback__line {
+  width: 130px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #D4145A, #3D5BF5);
+}
+.feedback__item {
+  min-width: 535px;
+  padding-top: 40px;
+}
+.feedback__item:not(:nth-child(2)) {
+  opacity: 0.4;
+}
+.feedback__item:first-child {
+  position: relative;
+  top: 0;
+  left: -70px;
+}
+.feedback__item:last-child {
+  position: relative;
+  top: 0;
+  left: 70px;
+}
+.feedback__container {
+  max-width: 10000px;
+}
+.feedback__track {
+  display: flex;
+}
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feedback__p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+.feedback__span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #8E8E8E;
+  padding-top: 10px;
+}
+.feedback__img-container {
+  z-index: 1;
+  width: 99px;
+  height: 112px;
+  background: linear-gradient(#D4145A, #2E3192);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.feedback__img-container_inner {
+  width: 93px;
+  height: 106px;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.feedback__img-container_inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=main.css.map */
